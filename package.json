@@ -1,0 +1,28 @@
+{
+  "name": "test_development",
+  "version": "1.0.0",
+  "description": "test development",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "author": "ed",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "6.x",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  }
+}
