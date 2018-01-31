@@ -116,12 +116,19 @@
   @return hsl(hue($color), saturation($color), $lightness);
 }
 
+@mixin padding($vertical, $horizontal){
+  padding-top: $vertical;
+  padding-bottom: $vertical;
+  padding-left: $horizontal;
+  padding-right: $horizontal;
+}
+
 @mixin site-padding {
   @media #{$desktop-only} {
-    @include padding(null $padding-site);
+    @include padding(null, $padding-site);
   }
   @media #{$mobile-only} {
-    @include padding(null $padding-site-mobile);
+    @include padding(null, $padding-site-mobile);
   }
 }
 

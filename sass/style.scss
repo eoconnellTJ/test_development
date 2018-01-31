@@ -1,9 +1,11 @@
 @import "variables";
-@import "normalize";
 @import "mixins";
+
+@import "normalize";
 @import "typography";
-// @import "utility";
-// @import "animation";
+@import "utility";
+
+@import "animation";
 @import "base";
 
 $font-stack: Arial, sans-serif;

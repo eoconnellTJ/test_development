@@ -1,3 +1,5 @@
+@import "mixins";
+
 .wrapper {
   /*
     This class will usually be used when we have escaped the site
@@ -12,7 +14,7 @@
     Used to horizontally center content within a wrapper taking
     our site's max width into account.
   */
-  @include margin(null auto);
+  // @include margin(null auto);
   max-width: $width-max;
 }
 

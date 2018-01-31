@@ -13,13 +13,20 @@
   "author": "ed",
   "license": "ISC",
   "dependencies": {
-    "pg": "6.x",
+    "autoprefixer": "^7.2.5",
+    "cssnano": "^3.10.0",
     "ejs": "^2.5.6",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "grunt-postcss": "^0.9.0",
+    "pg": "6.x",
+    "pixrem": "^4.0.1",
+    "postcss": "^6.0.16"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "request": "^2.81.0",
