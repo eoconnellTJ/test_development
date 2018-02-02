@@ -52,10 +52,6 @@ module.exports = function(grunt) {
           "public/scripts/script.min.js": ["public/scripts/*.js"]
         }
       }
-      // build: {
-      //   src: ["src/*.js"],
-      //   dest: "public/scripts/script.min.js"
-      // }
     }
   });
 
