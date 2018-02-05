@@ -15,7 +15,9 @@ module.exports = function(grunt) {
     },
     sass: {
       options: {
-        sourceMap: true
+        sourceMap: true,
+        style: "expanded",
+        require: "susy"
       },
       dist: {
         files: {
