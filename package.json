@@ -8,7 +8,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "node": "nodemon index.js"
   },
   "author": "ed",
   "license": "ISC",
@@ -32,6 +33,7 @@
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
+    "nodemon": "^1.14.12",
     "request": "^2.81.0",
     "tape": "^4.7.0"
   }
