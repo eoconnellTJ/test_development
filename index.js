@@ -1,8 +1,7 @@
 var express = require("express");
 var app = express();
 var pg = require("pg");
-var data = require('./data')
-var products = require('./data/products')
+var products = require("./data/products");
 
 app.set("port", process.env.PORT || 5000);
 
@@ -12,10 +11,11 @@ app.use(express.static(__dirname + "/public"));
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
-app.get('/', function(req,res){
-  console.log(products);
-  res.send(products);
-})
+app.get("/", function(req, res) {
+  res.send(products).catch(err => {
+    console.log("the error is =", err);
+  });
+});
 
 app.get("/homepage", function(request, response) {
   response.render("pages/index");
