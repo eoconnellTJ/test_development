@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
 var pg = require("pg");
+var data = require('./data')
+var products = require('./data/products')
 
 app.set("port", process.env.PORT || 5000);
 
@@ -11,7 +13,8 @@ app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
 app.get('/', function(req,res){
-  res.send('please redirect')
+  console.log(products);
+  res.send(products);
 })
 
 app.get("/homepage", function(request, response) {

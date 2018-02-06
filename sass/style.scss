@@ -1,13 +1,13 @@
-// @import "variables";
-// @import "mixins";
-// @import "normalize";
-// @import "typography";
-// @import "utility";
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "typography";
+@import "utility";
 // @import "animation";
-// @import "base";
+//@import "base";
 // @import "./layout/index";
 // @import "./pages/index";
-@import "application";
+//@import "application";
 
 $font-stack: Arial, sans-serif;
 $primary-color: #333;
@@ -27,4 +27,8 @@ li {
   border: 2px solid $color-product-warm;
   font-family: $font-stack;
   color: $color-blue-grass;
+}
+
+#box {
+  background-color:blue;;
 }
