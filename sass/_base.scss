@@ -15,9 +15,14 @@
 .box {
   @include border-radius(10px);
 }
-.box-section>div {
-  background-color: 'lightblue';
+.box-section > div {
+  background-color: "lightblue";
 }
 #box {
-  background-color: 'blue';
+  background-color: "blue";
+}
+
+.recommend-here {
+  min-height: 125px;
+  border: 1px solid black;
 }
