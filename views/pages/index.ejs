@@ -3,9 +3,34 @@
 
 <head>
   <% include ../partials/header.ejs %>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        console.log("DOM fully loaded and parsed");
+      });
+    </script>
 </head>
 
 <body>
+  <script type="text/javascript">
+    var utag_data = {
+      title: "", // 
+      page_type: "" // 
+    }
+  </script>
+  <script>
+    (function (a, b, c, d) {
+      a = '//tags.tiqcdn.com/utag/tommyjohn/internal-developer/dev/utag.js';
+      b = document;
+      c = 'script';
+      d = b.createElement(c);
+      d.src = a;
+      d.type = 'text/java' + c;
+      d.async = true;
+      a = b.getElementsByTagName(c)[0];
+      a.parentNode.insertBefore(d,
+        a);
+    })();
+  </script>
   <% include ../partials/nav.ejs %>
     <h1 class='main-header'>Home Page</h1>
 
@@ -42,7 +67,7 @@
           .nav-item {
             font-size: 24px;
           }
-          </style>
+        </style>
         <ul>
           <li class='nav-item'>
             <a href="">menu 2</a>
@@ -71,4 +96,5 @@
     footer
   </div>
 </footer>
+
 </html>

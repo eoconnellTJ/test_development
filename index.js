@@ -11,6 +11,10 @@ app.use(express.static(__dirname + "/public"));
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
+app.get("/", function(req, res) {
+  res.render("pages/default");
+});
+
 app.get("/data.json", function(req, res) {
   res.send(products).catch(err => {
     console.log("the error is =", err);
