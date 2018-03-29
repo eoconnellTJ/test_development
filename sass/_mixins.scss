@@ -116,7 +116,7 @@
   @return hsl(hue($color), saturation($color), $lightness);
 }
 
-@mixin padding($vertical, $horizontal){
+@mixin padding($vertical, $horizontal) {
   padding-top: $vertical;
   padding-bottom: $vertical;
   padding-left: $horizontal;

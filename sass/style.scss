@@ -8,14 +8,13 @@
 // @import "./layout/index";
 // @import "./pages/index";
 //@import "application";
-
-$font-stack: Arial, sans-serif;
+@import "footer";
+// @import "animation";
+@import "base";
+$font-stack: Arial,
+sans-serif;
 $primary-color: #333;
-$testing: 2rem;
-
-// .main-footer {
-//   color: yellow;
-// }
+$testing: 3rem;
 nav {
   ul {
     margin: 0;
@@ -23,12 +22,9 @@ nav {
     list-style: none;
   }
 }
+
 li {
   border: 2px solid $color-product-warm;
   font-family: $font-stack;
   color: $color-blue-grass;
-}
-
-#box {
-  background-color:blue;;
 }

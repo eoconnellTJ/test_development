@@ -1,0 +1,37 @@
+<footer>
+  <div class='container'>
+    <div class='main-footer'>
+
+      <% footerlinks.forEach(function(user){ %>
+        <div class="main-footer-column">
+          <h2>
+            <%= user.title %>
+          </h2>
+          <ul>
+            <% user.links.forEach(function(link) { %>
+              <li>
+                <a href="<%= `https://www.tommyjohn.com/${link.toLowerCase()}` %>">
+                  <%= link %>
+                </a>
+              </li>
+
+              <% }); %>
+          </ul>
+        </div>
+        <% }); %>
+
+    </div>
+  </div>
+</footer>
+<script>
+  const arr = $('.main-footer-column li a');
+  for (let i = 0; i < arr.length; i++) {
+    if ($(arr[i]).text().trim() === 'Fabric') {
+      $(arr[i]).attr('id', 'ga-footer-fabric');
+    }
+  }
+  // var tjDiv = document.getElementById('dynamic-yield-target-homepage-header');
+  //   if (tjDiv) {
+  //     tjDiv.className += tjDiv.className ? 'full-bleed-header full-width-aligned-left' : 'full-bleed-header full-width-aligned-left';
+  //   }
+</script>
