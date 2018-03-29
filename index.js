@@ -25,7 +25,7 @@ app.get("/product", (req, res) => {
 });
 
 app.get("/custom", (req, res) => {
-  res.render("pages/custom"), { footerlinks };
+  res.render("pages/custom", { footerlinks });
 });
 
 app.get("/cart", (req, res) => {
